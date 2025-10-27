@@ -1,0 +1,13 @@
+    apiVersion: cert-manager.io/v1
+     
+    kind: Certificate
+    metadata:
+      name: learn-k8s-wilson-click-tls
+    spec:
+      secretName: learn-k8s-wilson-click
+      issuerRef:
+        name: letsencrypt-prod
+        kind: ClusterIssuer
+      commonName: learn-k8s.wilson.click
+      dnsNames:
+        - learn-k8s.wilson.click
