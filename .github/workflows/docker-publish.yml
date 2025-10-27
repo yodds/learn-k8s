@@ -56,7 +56,7 @@ jobs:
         uses: 'google-github-actions/get-gke-credentials@v1'
         with:
           cluster_name: multi-cluster
-          location: us-central1
+          location: us-central1-a
           project_id: learning-k8s-476313
       
       # --- Part 4: Build and Push Prod Images (from our previous setup) ---
